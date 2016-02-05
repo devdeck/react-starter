@@ -14,9 +14,11 @@ var List = React.createClass({
     });
 
     return (
-      <ul>
-         {listItems}
-      </ul>
+      <div className="row">
+        <ul>
+           {listItems}
+        </ul>
+      </div>
     );
   }
 });

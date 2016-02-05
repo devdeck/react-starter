@@ -57,7 +57,7 @@
 	var ReactDOM = __webpack_require__(159);
 	var List = __webpack_require__(160);
 
-	ReactDOM.render(React.createElement(List, null), document.getElementById('ingredients'));
+	ReactDOM.render(React.createElement(List, null), document.getElementById('container'));
 
 /***/ },
 /* 2 */
@@ -19680,9 +19680,13 @@
 	    });
 
 	    return React.createElement(
-	      'ul',
-	      null,
-	      listItems
+	      'div',
+	      { className: 'row' },
+	      React.createElement(
+	        'ul',
+	        null,
+	        listItems
+	      )
 	    );
 	  }
 	});
